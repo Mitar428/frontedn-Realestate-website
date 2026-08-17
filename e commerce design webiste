@@ -1,0 +1,44 @@
+# SHOP.CO
+
+This is a simple online clothing shop website made with HTML, CSS and JavaScript.
+
+The website has different sections where users can look at products, add products to the cart and see some information about the shop.
+
+## Features
+
+* Home page
+* Product sections
+* New arrivals
+* Top selling products
+* Shopping cart
+* Search bar
+* Product ratings
+* Customer reviews
+* Different clothing styles
+* Newsletter section
+* Footer with company information
+
+## Technologies
+
+* HTML
+* CSS
+* JavaScript
+
+
+## Project Files
+
+* `index.html` - main page
+* `main2.css` - styles for the page
+* `main2.js` - JavaScript functions
+* `cart.html` - shopping cart page
+* `README.md` - project information
+
+## How to Run
+
+Open the `index.html` file in a web browser.
+
+No additional installation is needed.
+
+## About
+
+The project was made as a practice website for learning HTML, CSS and JavaScript and for creating a simple online clothing store.
