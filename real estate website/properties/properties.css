@@ -1,0 +1,482 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.header i {
+  background-color: white;
+  clip-path: circle(50%);
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.header i:hover {
+  background-color: orange;
+}
+
+.ok {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  color: red;
+}
+
+.nav-bar1 .icon {
+  display: none; /* hamburger sakriven na desktopu */
+}
+
+ul {
+  display: flex;  
+  list-style: none;
+}
+
+ul a {
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.schedule {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.nav-bar1 {
+  display: flex; 
+  float: right;
+  z-index: 9999;
+  position: relative;
+}
+
+.nav-bar1 li:hover {
+  background-color: orange;
+}
+
+.schedule .placeholder-text {
+  color: #333; /* ispravljena boja */
+  font-weight: bold;
+}
+
+.schedule input[type="date"] {
+  border-radius: 10px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.nav-bar1 ul li:nth-child(2) a {
+  color: orange;
+}
+
+#datum {
+  z-index: 9999; 
+  position: relative;
+  border-radius: 1.5rem;
+  color: white;
+  padding: 0.5rem;
+  background-color: orange;
+}
+
+.baner {
+  position: absolute;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.opisi-banera {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding-top: 12%;
+  font-size: 2rem;
+}
+
+#home-properties {
+  background-color: white;
+  color: black;
+  text-align: center;
+  width: 25%;
+  display: block;
+  margin: auto;
+}
+
+#properties {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.dugmici {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 10%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.container-dugmici {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  margin-left: 2%;
+}
+
+.dugmici:nth-child(1) {
+  background-color: orange;
+}
+
+.container-real-estates {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5rem;
+  justify-items: center;
+}
+
+.real-estate {
+  background-color: white;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+}
+
+.lux {
+  background-color: orange;
+  width: 5rem;
+  text-align: center;
+  color: white;
+}
+
+.price {
+  color: orange;
+}
+
+.opis {
+  display: flex;
+  justify-content: space-around;
+}
+
+#under-describe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-left: 2rem;
+}
+
+button {
+  border-radius: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.dot {
+  height: 2rem;
+  width: 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 50%; /* bolje za krug */
+  display: inline-block;
+  text-align: center;
+  margin: 1rem;
+}
+
+.next-page {
+  display: flex;
+  justify-content: center;
+}
+
+.dot:nth-child(2) {
+  background-color: orange;
+}
+
+.dot:hover {
+  background-color: orangered;
+  transition: 0.5s;
+}
+
+footer {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  padding: 2rem;
+}
+
+
+@media screen and (max-width:400px) {
+
+
+  .nav-bar1 ul li:not(.icon) {
+    display: none;
+  }
+
+  .nav-bar1 .icon  {
+    display: block;
+    color: white;
+  }
+
+  .nav-bar1 a.icon {
+    position: absolute;
+    right: 20%;
+    top: 3%;
+    font-size: 20px;
+    color: white;
+    z-index: 999;
+  }
+
+  .nav-bar1.responsive ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #717171;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+
+  .nav-bar1.responsive ul li {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .nav-bar1.responsive ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .nav-bar1 #calendar {
+    display: none;
+  }
+
+  .nav-bar1.responsive #calendar {
+    display: block;
+  }
+
+  .baner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto 0;
+  
+  }
+
+  .opisi-banera {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .dugmici {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-real-estates {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }footer p{
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+
+  .nav-bar1 ul li:not(.icon) {
+    display: none;
+  }
+
+  .nav-bar1 .icon  {
+    display: block;
+    color: white;
+  }
+
+  .nav-bar1 a.icon {
+    position: absolute;
+    right: 20%;
+    top: 3%;
+    font-size: 20px;
+    color: white;
+    z-index: 999;
+  }
+
+  .nav-bar1.responsive ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #717171;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+
+  .nav-bar1.responsive ul li {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .nav-bar1.responsive ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .nav-bar1 #calendar {
+    display: none;
+  }
+
+  .nav-bar1.responsive #calendar {
+    display: block;
+  }
+
+  .baner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto 0;
+  
+  }
+
+  .opisi-banera {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .dugmici {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-real-estates {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }footer p{
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:1200px) {
+
+
+  .nav-bar1 ul li:not(.icon) {
+    display: none;
+  }
+
+  .nav-bar1 .icon  {
+    display: block;
+    color: white;
+  }
+
+  .nav-bar1 a.icon {
+    position: absolute;
+    right: 20%;
+    top: 3%;
+    font-size: 20px;
+    color: white;
+    z-index: 999;
+  }
+
+  .nav-bar1.responsive ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #717171;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+
+  .nav-bar1.responsive ul li {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .nav-bar1.responsive ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .nav-bar1 #calendar {
+    display: none;
+  }
+
+  .nav-bar1.responsive #calendar {
+    display: block;
+  }
+
+  .baner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto 0;
+  
+  }
+
+  .opisi-banera {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .dugmici {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-real-estates {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }footer p{
+    text-align: center;
+    font-size: 1rem;
+  }
+}
